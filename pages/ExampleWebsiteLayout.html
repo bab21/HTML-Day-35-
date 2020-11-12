@@ -1,0 +1,80 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .navigation{
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > .articles {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .mainContentItem{
+    text-align: left;
+    background: deepskyblue;
+  }
+
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="navigation">Navigation</nav>
+  <div class="mainContent">
+      <header><h1>National Symbols Of India</h1> </header>
+      <main class="content">
+        <div class="articles">
+            <section class="mainContentItem">
+                <article>
+                    <h2>National Anthem</h2>
+                    <p>Jana Gana Mana is the national anthem of India.
+                       It was composed as Bharoto Bhagyo Bidhata in Bengali by polymath Rabindranath Tagore.
+                       Sadhu Bengali or tatsama Bengali, which was mostly used in literature at that time was influenced by Sanskrit vocabulary.[8] The first stanza of the song Bharoto Bhagyo Bidhata was adopted by the Constituent Assembly of India as the National Anthem on 24 January 1950.
+                       A formal rendition of the national anthem takes approximately 52 seconds.</p>
+                </article>
+                <article>
+                    <h2>National Song</h2>
+                    <p>Vande Mataram (IAST: Vande Mātaram, also pronounced Bande Mataram; transl. Mother, I bow to thee) is a Bengali poem written by Bankim Chandra Chatterjee in 1870s,
+                       which he included in his 1882 Bengali novel Anandamath. 
+                       The poem was first sung by Rabindranath Tagore in 1896.
+                       The first two verses of the song were adopted as the National Song of India in October 1937 by the Congress Working Committee prior to the end of colonial rule in August 1947</p>
+                </article>
+                <article>
+                    <h2>National Animal</h2>
+                    <p>The magnificent tiger, Panthera tigris is a striped animal.
+                       It has a thick yellow coat of fur with dark stripes.
+                       The combination of grace, strength, agility and enormous power has earned the tiger its pride of place as the national animal of India.</p>
+                </article>
+            </section>
+        </div>
+        <aside>Aside</aside>
+        </main>
+  	<footer>Footer</footer>
+  </div>
+</body>
